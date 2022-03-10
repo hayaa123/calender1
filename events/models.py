@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-# from ls.joyous.models import (MultidayEventPage, RecurringEventPage,
-#                               MultidayRecurringEventPage, removeContentPanels)
+from ls.joyous.models import (MultidayEventPage, RecurringEventPage,
+                              MultidayRecurringEventPage, removeContentPanels)
 
 # # Hide unwanted event types
 # MultidayEventPage.is_creatable = False
@@ -11,4 +11,4 @@ from django.db import models
 # MultidayRecurringEventPage.is_creatable = False
 
 # # Hide unwanted content
-# removeContentPanels(["category", "tz", "group_page", "website"])
+removeContentPanels(["category", "tz", "group_page", "website"])
