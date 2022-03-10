@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
-
+    'events',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',
@@ -169,3 +169,25 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
+
+
+JOYOUS_THEME_CSS = "/static/joyous/css/joyous_forest_theme.css"
+# JOYOUS_HOLIDAYS = "SA" 
+# @to do :  
+# 1) how it write 
+# 2) no support for jordan
+JOYOUS_DATE_FORMAT = "l jS \\o\\f F X"
+JOYOUS_DATE_SHORT_FORMAT = "j M X"
+JOYOUS_TIME_FORMAT = "fq"
+JOYOUS_TIME_INPUT = "12"
+
+USE_TZ = True
+TIME_ZONE = "Europe/London" 
+# TIME_ZONE = 'Etc/GMT+2'
+# we didnt find the timezone for jordan yet
+# https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+# we can use the django time zones 
+# the time zones differance between the admin side and the usret side 
+USE_I18N = True
+USE_L10N = True
+LANGUAGE_CODE = 'en-uk'
